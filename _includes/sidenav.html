@@ -1,0 +1,16 @@
+{% assign chapters = site.data.sidenav %}
+{% for chapter in chapters %}
+  <h3><a href="{{chapter.link}}">{{chapter.title}}</a></h3>
+  <ul>
+    {% for sub in chapter.subchapters %}
+    <li>
+      <h5><a href="{{sub.link}}">{{sub.title}}</a></h5>
+      <ul>
+        {% for sec in sub.sections %}
+        <li><a href="{{sec.link}}">{{sec.title}}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

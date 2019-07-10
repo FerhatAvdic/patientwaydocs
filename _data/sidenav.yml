@@ -1,0 +1,32 @@
+- title: Support
+  link: /support
+  subchapters:
+
+    - title: "FAQ"
+      link: /support/faq
+      sections:
+      - title: section1
+        link: /support/faq/section1
+      - title: section2
+        link: /support/faq/section2
+      - title: section3
+        link: /support/faq/section3
+
+    - title: issue management
+      link: /support/issuemanagement
+      sections:
+        - title: section1
+          link: /support/issuemanagement/section1
+
+    - title: Other
+      link:
+      sections:
+        - title: placeholder section
+          link:
+
+- title: Other
+  link: 
+  subchapters: 
+    - title: subchapter 1
+      link:
+      sections:

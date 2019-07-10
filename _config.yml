@@ -26,6 +26,10 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-paginate-v2
+sass:
+load_paths:
+    - _sass
+    - node_modules
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -74,8 +78,3 @@ pagination:
     before: 2
     after: 2
 
-sass:
-load_paths:
-    - _sass
-    - node_modules
-exclude: []

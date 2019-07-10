@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar">
+          {% assign alldocs = site.documents | sort: 'section' %}
+          {% include sidenav.html allposts=alldocs %}
+        </div>
+      </div>
+      <div class="offset-md-1 col-md-6">
+        <header class="post-header">
+          <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+          <p class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+            {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+            {% if page.collection %}<br>Collection: {{ page.collection }}{% endif %}
+            {% if page.tags %}<br>Tags: {{ page.tags }}{% endif %}
+          </p>
+        </header>
+        {{content}}
+        {% if page.tags contains "subchapter" %}{% include subchapter-contents.html %}{% endif %}
+        {% if page.tags contains "chapter" %}{% include chapter-contents.html %}{% endif %}
+        {% include postnav.html %}
+      </div>
+    </div>
+  </div>
+</article>

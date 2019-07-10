@@ -1,0 +1,12 @@
+<hr>
+<p>
+  <h5>In this chapter...</h5>
+</p>
+<ul>
+  {% assign allposts = site.documents %}
+  {% for subchapter in allposts %}
+    {% if subchapter.category contains page.title%}
+      <li><a href="{{ subchapter.url }}">{{ subchapter.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>

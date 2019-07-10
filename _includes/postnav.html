@@ -1,0 +1,24 @@
+{% assign document = site.documents | sort: 'section' %}
+    {% for links in document %}
+        {% if links.title == page.title %}
+
+            {% unless forloop.first %}
+                {% assign prevurl = prev.url %}
+                {% assign prevtitle = prev.title %}
+            {% endunless %}
+
+            {% unless forloop.last %}
+                {% assign next = document[forloop.index] %}
+                {% assign nexturl = next.url %}
+                {% assign nexttitle = next.title %}
+            {% endunless %}
+        {% endif %}
+        {% assign prev = links %}
+    {% endfor %}
+<hr>
+{% if prevurl or nexturl %}
+    <div class="d-flex justify-content-between">
+        {% if prevurl %} <h5><a href="{{prevurl}}" class="prev">&larr; {{ prevtitle}}</a></h5> {% endif %}                    
+        {% if nexturl %} <h5><a href="{{nexturl}}" class="next">{{nexttitle}} &rarr;</a></h5> {% endif %}
+    </div>
+{% endif %}

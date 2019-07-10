@@ -1,8 +1,26 @@
-<ul class="post-list">
-  {% assign allposts = site.documents | sort: 'section' %}
+---
+layout: default
+---
+<!-- Just some nice to have styles for the pager buttons -->
+<style>
+  ul.pager { text-align: center; list-style: none; }
+  ul.pager li {display: inline;border: 1px solid black; padding: 10px; margin: 5px;}
+  .selected{ background-color: magenta; }
+  .float-left{float: left;}
+</style>
+
+
+<div class="container">
+
+  <!-- <h1 class="page-heading">Docs</h1> -->
+  
+  {{ content | markdownify }}
+
+  <ul class="post-list">
+  {% assign allposts = site.documents | sort: 'section'%}
     {% for chapter in allposts %}
     <!-- Get all chapters -->
-      {% if chapter.tags contains "chapter"%}
+      {% if chapter.tags contains "chapter" and chapter.title contains "Support"%}
         <li><h2><a href="{{ chapter.url }}">{{ chapter.title }}</a></h2></li>
         <!-- Get all subchapters of current chapter -->
         {% for subchapter in allposts %}

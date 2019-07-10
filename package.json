@@ -1,7 +1,7 @@
 {
   "name": "patientway",
   "version": "1.0.0",
-  "description": "",
+  "description": "This example bookshop website uses collections to organize its books^*. The site relies on pagination of its books by both collections and tags. The site shows how to paginate by single, multiple or all collections at the same time.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

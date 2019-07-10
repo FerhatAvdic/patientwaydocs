@@ -2,6 +2,7 @@
 
 The __docs__ folder contains all section pages as well as chapter and subchapter index pages.
 
+A certain folder structure is made based on jekyll collections to automatically generate correct and seo friendly page links.
 The path to each type of page in the __docs__ folder is as follows:
 
 - Chapter index page: _chapters/filename

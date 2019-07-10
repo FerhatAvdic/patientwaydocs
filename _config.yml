@@ -41,7 +41,10 @@ collections:
   support:
     output: true
     permalink: /docs/:collection/:path/
-  other:
+  app-pwcq:
+    output: true
+    permalink: /docs/:collection/:path/
+  integrations:
     output: true
     permalink: /docs/:collection/:path/
   chapters:

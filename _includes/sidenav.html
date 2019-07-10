@@ -1,8 +1,8 @@
-<ul class="post-list">
-  {% assign allposts = site.documents | sort: 'section' %}
+  <ul class="post-list">
+  {% assign allposts = site.documents | sort: 'section'%}
     {% for chapter in allposts %}
     <!-- Get all chapters -->
-      {% if chapter.tags contains "chapter"%}
+      {% if chapter.tags contains "chapter" and page.url contains chapter.id %}
         <li><h2><a href="{{ chapter.url }}">{{ chapter.title }}</a></h2></li>
         <!-- Get all subchapters of current chapter -->
         {% for subchapter in allposts %}

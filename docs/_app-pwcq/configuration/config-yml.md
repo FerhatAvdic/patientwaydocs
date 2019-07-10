@@ -1,12 +1,11 @@
 ---
 layout: section-page
-title:  "support"
-id: support
-section: 02,00,00
-tags: chapter
+title:  "Config-yml"
+section: 01,01,01
+tags: configuration
 ---
 
-# Support
+# Config-YML
 
 ## Hanc voce ducis coronatae deflevere onus
 

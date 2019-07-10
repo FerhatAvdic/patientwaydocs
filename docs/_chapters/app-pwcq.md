@@ -1,12 +1,12 @@
 ---
 layout: section-page
-title:  "support"
-id: support
-section: 02,00,00
+title:  "App-pwcq"
+id: app-pwcq
+section: 01,00,00
 tags: chapter
 ---
 
-# Support
+# APP-PWCQ
 
 ## Hanc voce ducis coronatae deflevere onus
 
@@ -36,27 +36,3 @@ ignota simul, vipereas. Augentur **in tamen alitibus** artus tutam. Peraguntque
 patrem, ora quo convicia clamore grates domini canities equos usus fors formas
 harundo. Ut est solent nisi profecisse pereunt matrem, digerit mora terra
 grandior occuluit habeant modulata ille Pyraethi: rex.
-
-## Dentes Bacche Cytoriaco procul
-
-Umbras voce, dum tyranno Paeonas convexa ter, adest procubuit actaque sive, quot
-pinus. Poenam ille lupum haec, iussi epulis circuit formae. Fama illum Inachis,
-donavi lata *pineta vix tellurem* facilesque. Malis dum, haberet tollens
-pectusque ore; horto oras inposuit, carmina ritu vagina dis cum a oblitae.
-Meritorum ab prius.
-
-- Omnis in amor operum
-- Tu coeptum tinus ab admota negat
-- Rapta cera testemque habet
-- Myrrha est reliquit tempus
-- Pallida se tyrannidis furoris nivea quae mille
-
-Pagasaea frugilegas ignis abdidit, rami felix: dat eunt de fraudesque ilia,
-viscera. Illo properant aer fessa, et aut more vana texique res est, humo qvem.
-Squamea iactat tutus?
-
-Raptor iubasque primum iam tellus sed verti, tremulo quantum! Edocuit oscula
-interrita puellas. Fine lyncum ab cruorem ignes feruntque succedere in cervice
-timemus conplexa tollere, ebore esse sit. Venenis flexit: omne in **Cyanen**,
-Nam [corpus modo](http://pugnaeet.io/utendum.html) sacris amores, sit
-innumerosque.

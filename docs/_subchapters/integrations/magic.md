@@ -1,9 +1,9 @@
 ---
 layout: section-page
-title:  "Manual"
-section: 11
+title:  "Magic"
+section: 03,01,00
 tags: subchapter
-category: Other
+category: Integrations
 ---
 
 

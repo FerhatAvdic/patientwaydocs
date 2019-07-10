@@ -1,12 +1,11 @@
 ---
 layout: section-page
-title:  "support"
-id: support
-section: 02,00,00
-tags: chapter
+title:  "Sms-settings"
+section: 01,01,02
+tags: configuration
 ---
 
-# Support
+# SMS-Settings
 
 ## Hanc voce ducis coronatae deflevere onus
 

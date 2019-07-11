@@ -1,23 +1,27 @@
-  <ul class="post-list">
+
   {% assign allposts = site.documents | sort: 'section'%}
     {% for chapter in allposts %}
     <!-- Get all chapters -->
       {% if chapter.tags contains "chapter" and page.url contains chapter.id %}
-        <li><h2><a href="{{ chapter.url }}">{{ chapter.title }}</a></h2></li>
+        <h5><a href="{{ chapter.url }}">{{ chapter.title | upcase }}</a></h5>
         <!-- Get all subchapters of current chapter -->
         {% for subchapter in allposts %}
 
           {% if subchapter.category contains chapter.title %}
 
             {% if subchapter.tags contains "subchapter"%}
-            <li><h4><a href="{{ subchapter.url }}">{{ subchapter.title }}</a></h4></li>
+            <h6><a class="" href="{{ subchapter.url }}">{{ subchapter.title | upcase }}</a></h6>
             {% endif %}
             <!-- Get all sections of current subchapter -->
-            {% for section in allposts %}
-            {% if section.tags contains subchapter.title %}
-            <li><h6><a href="{{ section.url }}">{{ section.title }}</a></h6></li>
-            {% endif %}
-            {% endfor %}
+            <ul>
+              {% for section in allposts %}
+              {% if section.tags contains subchapter.title %}
+              <li>
+                <a href="{{ section.url }}">{{ section.title}}</a>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
 
           {% endif %}
 
@@ -25,4 +29,10 @@
 
       {% endif %}
     {% endfor %}
-  </ul>
+
+    <hr>
+
+    <p>
+      <h6>Looking for a different chapter?</h6>
+    </p>
+    {% include chapters.html %}

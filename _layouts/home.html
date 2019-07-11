@@ -26,7 +26,7 @@ layout: default
       <div class="col-md-4 text-center mt-5">
           <ul class="post-list">
         <li>
-          <h2><a href="{{ chapter.url }}">{{ chapter.title }}</a></h2>
+          <h2><a href="{{ chapter.url }}">{{ chapter.title | upcase }}</a></h2>
         </li>
         <!-- Get all subchapters of current chapter -->
         {% for subchapter in allposts %}
@@ -35,7 +35,7 @@ layout: default
         
         {% if subchapter.tags contains "subchapter"%}
         <li>
-          <h4><a href="{{ subchapter.url }}">{{ subchapter.title }}</a></h4>
+          <h4><a href="{{ subchapter.url }}">{{ subchapter.title | capitalize }}</a></h4>
         </li>
         {% endif %}
         <!-- Get all sections of current subchapter -->

@@ -1,0 +1,11 @@
+<ol>
+  {% assign allposts = site.documents | sort: 'section' %}
+  {% for chapter in allposts %}
+  <!-- Get all chapters -->
+  {% if chapter.tags contains "chapter"%}
+  <li>
+    <a href="{{ chapter.url }}">{{ chapter.title | capitalize }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ol>

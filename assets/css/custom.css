@@ -29,6 +29,7 @@ html, body, main{
   position: fixed;
   overflow-y: scroll;
   height: 100%;
+  width:100%;
 }
 #sidebar a, #sidebar a:hover{
   color: #eee;

@@ -1,7 +1,7 @@
 ---
 layout: section-page
 title:  "Faq-50x-codes"
-section: 02,01,02
+section: 02-01-02
 tags: troubleshoot
 ---
 

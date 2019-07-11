@@ -1,9 +1,11 @@
 ---
 layout: section-page
 title:  "general"
-section: 02,02,00
+section: 02-02-00
 tags: subchapter
 category: support
+icon: '&#8278;'
+color: 
 ---
 
 

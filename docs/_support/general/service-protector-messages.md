@@ -1,7 +1,7 @@
 ---
 layout: section-page
 title:  "Service Protector Messages"
-section: 02,02,03
+section: 02-02-03
 tags: general
 ---
 

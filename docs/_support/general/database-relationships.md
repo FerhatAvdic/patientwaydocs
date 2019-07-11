@@ -1,7 +1,7 @@
 ---
 layout: section-page
 title:  "Database Relationshops"
-section: 02,02,01
+section: 02-02-01
 tags: general
 ---
 

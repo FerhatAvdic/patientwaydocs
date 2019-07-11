@@ -1,9 +1,10 @@
 ---
 layout: section-page
 title:  "configuration"
-section: 01,01,00
+section: 01-01-00
 tags: subchapter
 category: App-pwcq
+icon: '&#8277;'
 ---
 
 

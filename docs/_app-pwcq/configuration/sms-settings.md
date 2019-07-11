@@ -1,7 +1,7 @@
 ---
 layout: section-page
 title:  "Sms-settings"
-section: 01,01,02
+section: 01-01-02
 tags: configuration
 ---
 

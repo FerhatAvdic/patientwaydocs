@@ -1,9 +1,10 @@
 ---
 layout: section-page
 title:  "troubleshoot"
-section: 02,01,00
+section: 02-01-00
 tags: subchapter
 category: support
+icon: '&#8281;'
 ---
 
 

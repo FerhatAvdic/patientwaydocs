@@ -1,7 +1,7 @@
 ---
 layout: section-page
 title:  "Speech-settings"
-section: 01,01,03
+section: 01-01-03
 tags: configuration
 ---
 

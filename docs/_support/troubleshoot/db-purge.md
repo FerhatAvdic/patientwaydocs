@@ -1,7 +1,7 @@
 ---
 layout: section-page
 title:  "DB-Purge"
-section: 02,01,01
+section: 02-01-01
 tags: troubleshoot
 ---
 

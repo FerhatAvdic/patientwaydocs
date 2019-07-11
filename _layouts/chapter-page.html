@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="page-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center mt-5">
+          <h2>{{page.title | upcase }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" offset-md-2 col-md-8">
+        <div class="text-justify m-5">
+          {{content}}
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <!-- subchapter tiles -->
+      {% assign allposts = site.documents %}
+      {% for subchapter in allposts %}
+      {% if subchapter.category contains page.title%}
+      <div class="col-md-3 text-center">
+        <a href="{{ subchapter.url }}" class="subchapter-tile">
+          <div class="subchapter-icon">
+            {{subchapter.icon}}
+          </div>
+          <div>{{ subchapter.title | upcase }}</div>
+        </a>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

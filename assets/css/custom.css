@@ -1,1 +1,25 @@
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+html, body, main{
+  height: 100%;
+}
+.page-content{
+  padding-top: 56px;
+}
+.subchapter-icon{
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 4px;
+  font-size: 84px;
+  margin-bottom: 15px;
+}
+
+.subchapter-tile{
+  text-decoration: none;
+}
+.subchapter-tile:hover{
+  text-decoration: none;
+}
+.subchapter-tile:hover .subchapter-icon{
+  background: rgb(207, 207, 207);
+  transition: all 0.3s;
+}

@@ -1,7 +1,7 @@
 ---
 layout: section-page
 title:  "Config-yml"
-section: 01,01,01
+section: 01-01-01
 tags: configuration
 ---
 

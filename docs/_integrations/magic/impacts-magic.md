@@ -1,7 +1,7 @@
 ---
 layout: section-page
 title:  Impacts Magic
-section: 03,01,02
+section: 03-01-02
 tags: Magic
 ---
 

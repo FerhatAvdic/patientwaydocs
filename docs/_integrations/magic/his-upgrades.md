@@ -1,8 +1,8 @@
 ---
 layout: section-page
 title:  His upgrades
-section: 03,01,01
-tag: Manual
+section: 03-01-01
+tag: Magic
 ---
 
 Prior to upgrades - in UAT
@@ -13,8 +13,6 @@ Prior to upgrades - in UAT
 - Test that all appt types function
 - Update screens as required
 - Commit changes
-
-
 
 On upgrade day - in PROD
 

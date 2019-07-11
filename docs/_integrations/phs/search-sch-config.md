@@ -1,7 +1,7 @@
 ---
 layout: section-page
 title:  Search Sch Config
-section: 03,02,01
+section: 03-02-01
 tags: Phs
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: section-page
 title: "Timezones"
-section: 02,02,02
+section: 02-02-02
 tags: general
 ---
 

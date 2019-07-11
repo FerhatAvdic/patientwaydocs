@@ -26,19 +26,19 @@ collections_dir: docs
 collections:
   support:
     output: true
-    permalink: /docs/:collection/:path/
+    permalink: /:collection/:path/
   app-pwcq:
     output: true
-    permalink: /docs/:collection/:path/
+    permalink: /:collection/:path/
   integrations:
     output: true
-    permalink: /docs/:collection/:path/
+    permalink: /:collection/:path/
   chapters:
     output: true
-    permalink: /docs/:path
+    permalink: /:path
   subchapters:
     output: true
-    permalink: /docs/:path
+    permalink: /:path
 
 #autopages is an optional pagination feature
 autopages:

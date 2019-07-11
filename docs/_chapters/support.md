@@ -3,7 +3,7 @@ layout: chapter-page
 title:  "support"
 id: support
 section: 02-00-00
-tags: chapter
+tags: 'chapter'
 ---
 
 Lorem markdownum magnae intellegat atque, huc mea a quod actaque. Patet illo

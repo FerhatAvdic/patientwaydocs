@@ -1,24 +1,29 @@
 {% assign document = site.documents | sort: 'section' %}
     {% for links in document %}
         {% if links.title == page.title %}
-
-            {% unless forloop.first %}
-                {% assign prevurl = prev.url %}
-                {% assign prevtitle = prev.title %}
-            {% endunless %}
-
-            {% unless forloop.last %}
-                {% assign next = document[forloop.index] %}
-                {% assign nexturl = next.url %}
-                {% assign nexttitle = next.title %}
-            {% endunless %}
+                {% unless forloop.first %}
+                    {% assign prevurl = prev.url %}
+                    {% assign prevtitle = prev.title %}
+                    {% assign prevtags = prev.tags %}
+                {% endunless %}
+                {% unless forloop.last%}
+                        {% assign next = document[forloop.index] %}
+                        {% assign nexturl = next.url %}
+                        {% assign nexttitle = next.title %}
+                        {% assign nexttags = next.tags %}
+                {% endunless %}
         {% endif %}
         {% assign prev = links %}
     {% endfor %}
 <hr>
 {% if prevurl or nexturl %}
     <div class="d-flex justify-content-between mb-5">
-        {% if prevurl %} <a href="{{prevurl}}" class="prev">&larr; {{ prevtitle | upcase }}</a> {% endif %}                    
-        {% if nexturl %} <a href="{{nexturl}}" class="next">{{nexttitle | upcase}} &rarr;</a> {% endif %}
+        {% unless prevtags contains 'chapter' %}
+            {% if prevurl %} <a href="{{prevurl}}" class="prev">&larr; {{ prevtitle | upcase }}</a> {% endif %}
+        {% endunless %}   
+        {% unless nexttags contains 'chapter' %}
+            {% if nexturl%} <a href="{{nexturl}}" class="next">{{nexttitle | upcase}} &rarr;</a> {% endif %}
+        {% endunless %}                 
+        
     </div>
 {% endif %}

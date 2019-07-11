@@ -10,53 +10,52 @@ layout: default
 </style>
 
 
-<div class="container mt-5">
-
-  <!-- <h1 class="page-heading">Docs</h1> -->
-  <div class="row">
-    <div class="col-md-12">
-      {{ content | markdownify }}
+<div class="page-padding">
+  <div class="container">
+  
+    <!-- <h1 class="page-heading">Docs</h1> -->
+    <div class="row">
+      <div class="col-md-12">
+        {{ content | markdownify }}
+      </div>
     </div>
-  </div>
-  <div class="row">
-   {% assign allposts = site.documents | sort: 'section' %}
-    {% for chapter in allposts %}
-    <!-- Get all chapters -->
+    <div class="row">
+      {% assign allposts = site.documents | sort: 'section' %}
+      {% for chapter in allposts %}
+      <!-- Get all chapters -->
       {% if chapter.tags contains "chapter"%}
       <div class="col-md-4 text-center mt-5">
-          <ul class="post-list">
-        <li>
-          <h2><a href="{{ chapter.url }}">{{ chapter.title | upcase }}</a></h2>
-        </li>
-        <!-- Get all subchapters of current chapter -->
-        {% for subchapter in allposts %}
-        
-        {% if subchapter.category contains chapter.title %}
-        
-        {% if subchapter.tags contains "subchapter"%}
-        <li>
-          <h4><a href="{{ subchapter.url }}">{{ subchapter.title | capitalize }}</a></h4>
-        </li>
-        {% endif %}
-        <!-- Get all sections of current subchapter -->
-        {% for section in allposts %}
-        {% if section.tags contains subchapter.title %}
-        <li>
-          <h6><a href="{{ section.url }}">{{ section.title }}</a></h6>
-        </li>
-        {% endif %}
-        {% endfor %}
-        
-        {% endif %}
-        
-        {% endfor %}
-          </ul>
-      </div>
-
-      {% endif %}
-    {% endfor %}
-
-  </div>
-
-
+        <ul class="post-list">
+          <li>
+            <h2><a href="{{ chapter.url }}">{{ chapter.title | upcase }}</a></h2>
+          </li>
+          <!-- Get all subchapters of current chapter -->
+          {% for subchapter in allposts %}
   
+          {% if subchapter.category contains chapter.title %}
+  
+          {% if subchapter.tags contains "subchapter"%}
+          <li>
+            <h4><a href="{{ subchapter.url }}">{{ subchapter.title | capitalize }}</a></h4>
+          </li>
+          {% endif %}
+          <!-- Get all sections of current subchapter -->
+          {% for section in allposts %}
+          {% if section.tags contains subchapter.title %}
+          <li>
+            <h6><a href="{{ section.url }}">{{ section.title }}</a></h6>
+          </li>
+          {% endif %}
+          {% endfor %}
+  
+          {% endif %}
+  
+          {% endfor %}
+        </ul>
+      </div>
+  
+      {% endif %}
+      {% endfor %}
+  
+    </div>
+</div>

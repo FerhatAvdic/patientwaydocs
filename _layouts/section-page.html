@@ -2,17 +2,16 @@
 layout: default
 ---
 
-<div class="page-content">
-  <article class="post mt-5" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3">
-          <div id="sidebar">
+<div class="page-padding h-100">
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+        <div class="col-md-3 bg-dark ">
+          <div id="sidebar" class="p-5">
             {% assign alldocs = site.documents | sort: 'section' %}
             {% include sidenav.html allposts=alldocs page=page %}
           </div>
         </div>
-        <div class="offset-md-1 col-md-6">
+        <div class="offset-md-1 col-md-6 mt-5">
           <header class="post-header">
             <h1 class="post-title" itemprop="name headline">{{ page.title | upcase }}</h1>
             <!-- <p class="post-meta">
@@ -31,5 +30,4 @@ layout: default
         </div>
       </div>
     </div>
-  </article>
 </div>
